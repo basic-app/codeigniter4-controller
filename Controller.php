@@ -13,7 +13,7 @@ abstract class Controller extends \CodeIgniter\Controller
 
         $layout = $this->layout;
 
-        $data = Services::renderer()->getData();
+        $data = service('renderer')->getData();
 
         if (array_key_exists('layout', $data))
         {
